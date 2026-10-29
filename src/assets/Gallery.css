@@ -1,0 +1,11 @@
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0px 12px 30px 0px rgb(110, 2, 2);
+    transform: scale(10,5,10,5);
+    transition: all 1000ms;
+}
+.image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}

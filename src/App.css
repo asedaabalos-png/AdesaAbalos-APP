@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #b19e9e96;
+}
+
+
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.header {
+  width: 100%;
+  min-height: 70px;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #3d0303;
+  color: rgb(187, 22, 22);
+}
+
+
+
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+
+
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+}
+
+.socials a img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+.socials a img:hover {
+  transform: scale(1.15);
+}
+
+
+
+.main {
+  flex: 1;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+
+
+
+.carousel {
+  width: 100%;
+}
+
+.carousel img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+
+
+
+.about {
+  padding: 30px;
+}
+
+.about h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.about p {
+  font-size: 20px;
+  color: #0a0303;
+  margin: 8px 0;
+}
+
+
+
+
+.footer {
+  width: 100%;
+  min-height: 70px;
+  padding: 20px 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #3d0303;
+  color: white;
+}
+
+.footer-info {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.footer > p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .header {
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .navigation {
+    gap: 15px;
+  }
+
+  .socials {
+    margin-left: 0;
+  }
+
+  .carousel img {
+    height: 350px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+}
